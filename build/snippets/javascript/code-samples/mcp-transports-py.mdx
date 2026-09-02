@@ -1,0 +1,11 @@
+```python
+from pathlib import Path
+
+from langchain.mcp import MCPAdapter
+
+# A string must be an http(s) URL, reached over streamable HTTP.
+http = MCPAdapter("https://example.com/mcp")
+
+# A script path is launched over stdio, one subprocess per adapter.
+stdio = MCPAdapter(Path("weather_server.py"))
+```
