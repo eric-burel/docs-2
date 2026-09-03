@@ -23,7 +23,10 @@ pip install -U "langgraph-cli[inmem]"
 
 ```bash uv
 # Python >= 3.11 is required.
-uv add "langgraph-cli[inmem]"
+# User-level installation
+uv tool install "langgraph-cli[inmem]"
+# Alternative: project-level installation
+# uv add "langgraph-cli[inmem]"
 ```
 </CodeGroup>
 :::
